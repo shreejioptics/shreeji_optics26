@@ -1,99 +1,125 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shreeji Optics</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+      background-color: #f4f9ff;
       color: #333;
     }
-
     header {
-      background: url('https://images.unsplash.com/photo-1587825140708-dfaf72ae4f1b?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
-      padding: 100px 20px;
+      background-color: #003366;
       color: white;
+      padding: 20px 0;
       text-align: center;
     }
-
-    header h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
+    nav {
+      background-color: #0055a5;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
     }
-
-    header p {
-      font-size: 20px;
-    }
-
-    .btn-primary {
-      display: inline-block;
-      margin-top: 20px;
-      background-color: #004080;
+    nav a {
       color: white;
-      padding: 12px 24px;
-      border: none;
-      border-radius: 8px;
+      padding: 14px 20px;
       text-decoration: none;
+      display: block;
     }
-
-    .btn-primary:hover {
-      background-color: #0059b3;
+    nav a:hover {
+      background-color: #003366;
     }
-
-    .container {
+    section {
+      padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
-      padding: 40px 20px;
     }
-
     h2 {
-      color: #004080;
-      margin-bottom: 20px;
+      color: #003366;
+      margin-bottom: 10px;
     }
-
-    p {
-      line-height: 1.6;
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
     }
-
     footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #004080;
+      background-color: #003366;
       color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+    footer p {
+      margin: 5px 0;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Welcome to Shreeji Optics</h1>
-  <p>Your trusted destination for quality eyewear and eye care</p>
-  <a href="#contact" class="btn-primary">Contact Us</a>
-</header>
+  <header>
+    <h1>Shreeji Optics</h1>
+    <p>Your trusted optician in Nikol, Ahmedabad.</p>
+  </header>
 
-<div class="container">
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to Shreeji Optics</h2>
+    <p>Your trusted optician in Nikol, Ahmedabad. Explore quality eyewear and professional eye care services.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Shreeji Optics, located in Nikol, Ahmedabad, is known for offering a wide range of optical products and services, including international brands like Crizal, Essilor, and Kotak lenses. We are committed to excellent customer service and precise eye care.</p>
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <ul>
+      <li>Spectacle Frames</li>
+      <li>Contact Lenses</li>
+      <li>Reading Glasses</li>
+      <li>Power Sunglasses</li>
+      <li>Branded Sunglasses</li>
+    </ul>
+  </section>
+
   <section id="services">
     <h2>Our Services</h2>
-    <p>We provide expert eye check-ups, frame fittings, prescription lenses, sunglasses, and branded eyewear to meet every need and style.</p>
+    <ul>
+      <li>Eye Testing by a Qualified Optometrist</li>
+      <li>Prescription Glasses</li>
+      <li>Lens Consultation</li>
+      <li>Customer Support & Guidance</li>
+      <li>NFC Mobile Payment Accepted</li>
+    </ul>
   </section>
 
-  <section id="contact" style="margin-top: 60px;">
+  <section id="contact">
     <h2>Contact Us</h2>
-    <p>Email: shreejioptics@example.com</p>
-    <p>Phone: +91 12345 67890</p>
-    <p>Visit us at: 123, Optical Street, Mumbai</p>
+    <p><strong>Address:</strong> Shop No. 12 A, Blueberry Complex, Near Bhojaldham Flat, Nikol, Ahmedabad, India 382350</p>
+    <p><strong>Opening Hours:</strong> Daily from 10 AM to 8:30 PM</p>
+    <p><strong>Phone:</strong> 8780097989</p>
+    <p><strong>Email:</strong> shreejioptics.online@gmail.com</p>
   </section>
-</div>
 
-<footer>
-  &copy; 2025 Shreeji Optics. All rights reserved.
-</footer>
+  <footer>
+    <p>© 2025 Shreeji Optics. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
