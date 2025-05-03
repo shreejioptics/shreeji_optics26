@@ -1,112 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shreeji Optics - Home</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shreeji Optics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #ffffff;
+      color: #333;
+    }
+    header {
+      background: #007BFF;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      background: url('https://via.placeholder.com/1200x500?text=20%25+OFF+on+Sunglasses') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .categories, .best-sellers, .why-us {
+      padding: 2rem;
+      text-align: center;
+    }
+    .section-title {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #007BFF;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .card {
+      border: 1px solid #eee;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    footer {
+      background: #f8f8f8;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
-  <!-- Hero Banner -->
+  <header>
+    <h1>Shreeji Optics</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Eyeglasses</a>
+      <a href="#">Sunglasses</a>
+      <a href="#">Contact</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
+
   <section class="hero">
-    <div class="hero-content">
-      <h1>FLAT 20% OFF ON SUNGLASSES</h1>
-      <p>Limited Time Offer – Visit our Nikol Store or Shop Online</p>
-      <a href="#sunglasses" class="btn">Shop Now</a>
-    </div>
+    20% OFF on Sunglasses - Shop Now
   </section>
 
-  <!-- Shop by Category -->
   <section class="categories">
-    <h2>Shop by Category</h2>
-    <div class="category-grid">
-      <a href="#eyeglasses" class="category-item">
-        <img src="img/eyeglasses.jpg" alt="Eyeglasses">
-        <span>Eyeglasses</span>
-      </a>
-      <a href="#sunglasses" class="category-item">
-        <img src="img/sunglasses.jpg" alt="Sunglasses">
-        <span>Sunglasses</span>
-      </a>
-      <a href="#lenses" class="category-item">
-        <img src="img/contact-lenses.jpg" alt="Contact Lenses">
-        <span>Contact Lenses</span>
-      </a>
+    <h2 class="section-title">Shop by Category</h2>
+    <div class="grid">
+      <div class="card">Eyeglasses</div>
+      <div class="card">Sunglasses</div>
+      <div class="card">Kids</div>
+      <div class="card">Premium Brands</div>
     </div>
   </section>
 
-  <!-- New Arrivals -->
-  <section class="products">
-    <h2>New Arrivals</h2>
-    <div class="product-grid">
-      <!-- Repeatable product cards -->
-      <div class="product-card">
-        <img src="img/product1.jpg" alt="Product">
-        <h3>Trendy Frame</h3>
-        <p>₹2,999</p>
+  <section class="best-sellers">
+    <h2 class="section-title">Best Sellers</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" alt="Product 1">
+        <p>Product Name 1</p>
+        <p><strong>₹999</strong></p>
       </div>
-      <div class="product-card">
-        <img src="img/product2.jpg" alt="Product">
-        <h3>Stylish Sunglasses</h3>
-        <p>₹1,999</p>
-      </div>
-      <div class="product-card">
-        <img src="img/product3.jpg" alt="Product">
-        <h3>Blue Light Glasses</h3>
-        <p>₹1,499</p>
+      <div class="card">
+        <img src="https://via.placeholder.com/200x200?text=Product+2" alt="Product 2">
+        <p>Product Name 2</p>
+        <p><strong>₹1299</strong></p>
       </div>
     </div>
   </section>
 
-  <!-- Why Choose Us -->
-  <section class="features">
-    <h2>Why Choose Shreeji Optics</h2>
-    <ul class="features-list">
-      <li>Certified Eye Testing</li>
-      <li>Branded Lenses (Zeiss, Essilor)</li>
-      <li>Latest Eyewear Trends</li>
-      <li>Free Delivery in Ahmedabad</li>
-      <li>Visit Our Nikol Store</li>
-    </ul>
+  <section class="why-us">
+    <h2 class="section-title">Why Choose Us</h2>
+    <p>Fast Delivery | Authentic Brands | Optical Experts</p>
   </section>
 
-  <!-- Store Gallery -->
-  <section class="gallery">
-    <h2>Visit Our Store</h2>
-    <div class="gallery-grid">
-      <img src="img/store1.jpg" alt="Store Interior">
-      <img src="img/store2.jpg" alt="Customer Experience">
-      <img src="img/store3.jpg" alt="Showroom View">
-    </div>
-    <a href="https://maps.app.goo.gl/mUwaNU64e9dnBi299" class="btn">Get Directions</a>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="testimonials">
-    <h2>What Our Customers Say</h2>
-    <blockquote>
-      "Loved the wide variety and fast service. Got my specs in 2 days!" – Priya M.
-    </blockquote>
-    <blockquote>
-      "Excellent collection and very helpful staff." – Rakesh V.
-    </blockquote>
-  </section>
-
-  <!-- Instagram Feed -->
-  <section class="instagram">
-    <h2>Follow Us on Instagram</h2>
-    <div class="insta-feed">
-      <p>Instagram feed goes here: <a href="https://instagram.com/shreeji__optics" target="_blank">@shreeji__optics</a></p>
-    </div>
-  </section>
-
-  <!-- Footer -->
   <footer>
-    <div class="footer-info">
-      <p>&copy; 2025 Shreeji Optics</p>
-      <p>Nikol, Ahmedabad</p>
-      <p>📞 +91-8780097989 | <a href="https://wa.me/918780097989">WhatsApp</a></p>
-    </div>
+    <p>Follow us on Instagram: @shreeji__optics</p>
+    <p>Visit us at Nikol, Ahmedabad - <a href="https://maps.app.goo.gl/mUwaNU64e9dnBi299">Location</a></p>
+    <p>&copy; 2025 Shreeji Optics. All rights reserved.</p>
   </footer>
 </body>
 </html>
