@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Customer Reviews | Shreeji Optics</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #333;
+    }
+    .review, .form-container {
+      background: #fff;
+      padding: 20px;
+      margin: 15px auto;
+      border-radius: 8px;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .name {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .stars {
+      color: #f39c12;
+      margin-bottom: 10px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    form button {
+      background: #27ae60;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #219150;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>What Our Customers Say</h1>
+
+  <div class="review">
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+    <div class="name">Ravi P.</div>
+    <p>Excellent service and a wide range of frames. Got my eye test done and new glasses within an hour!</p>
+  </div>
+
+  <div class="review">
+    <div class="stars">⭐⭐⭐⭐</div>
+    <div class="name">Hetal S.</div>
+    <p>Very professional staff and reasonable pricing. Loved the collection of sunglasses too!</p>
+  </div>
+
+  <!-- Add more reviews -->
+
+  <h2>Leave Us a Review!</h2>
+  <div class="form-container">
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="text" name="rating" placeholder="Your Rating (e.g., 5 stars)" required>
+      <textarea name="message" rows="4" placeholder="Your Review" required></textarea>
+      <button type="submit">Submit Review</button>
+    </form>
+  </div>
+
+</body>
+</html>
