@@ -3,6 +3,21 @@
 <head>
   <title>Gallery | Shreeji Optics</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 20px;
+    }
+    .gallery img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+  </style>
 </head>
 <body>
   <div class="navbar">
@@ -13,7 +28,15 @@
     <a href="reviews.html">Customer Reviews</a>
     <a href="contact.html">Contact</a>
   </div>
+
   <h1>Our Gallery</h1>
-  <p>Here we'll showcase images of our optical collection, store interiors, and happy customers.</p>
+  <div class="gallery">
+    <img src="images/img1.jpg" alt="Optical Frame 1">
+    <img src="images/img2.jpg" alt="Optical Frame 2">
+    <img src="images/img3.jpg" alt="Our Store">
+    <img src="images/img4.jpg" alt="Customer 1">
+    <img src="images/img5.jpg" alt="Customer 2">
+    <img src="images/img6.jpg" alt="Frames Collection">
+  </div>
 </body>
 </html>
