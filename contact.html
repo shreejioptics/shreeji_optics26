@@ -3,6 +3,33 @@
 <head>
   <title>Contact Us | Shreeji Optics</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    form {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
   <div class="navbar">
@@ -13,7 +40,19 @@
     <a href="reviews.html">Customer Reviews</a>
     <a href="contact.html">Contact</a>
   </div>
+
   <h1>Contact Shreeji Optics</h1>
-  <p>Visit us at Nikol, Ahmedabad or call us at +91-9879813656</p>
+  <form action="https://formspree.io/f/your_form_id" method="POST">
+    <label>Name</label>
+    <input type="text" name="name" required>
+
+    <label>Email</label>
+    <input type="email" name="email" required>
+
+    <label>Message</label>
+    <textarea name="message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
 </body>
 </html>
