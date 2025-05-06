@@ -1,81 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Customer Reviews | Shreeji Optics</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      background-color: #f4f4f4;
-    }
-    h1, h2 {
-      text-align: center;
-      color: #333;
-    }
-    .review, .form-container {
-      background: #fff;
-      padding: 20px;
-      margin: 15px auto;
-      border-radius: 8px;
+    .review {
       max-width: 600px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin: 20px auto;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    .name {
-      font-weight: bold;
-      margin-bottom: 5px;
+    .review h3 {
+      margin-top: 0;
+      color: #007bff;
     }
-    .stars {
-      color: #f39c12;
-      margin-bottom: 10px;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-    form button {
-      background: #27ae60;
-      color: #fff;
-      padding: 12px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    form button:hover {
-      background: #219150;
+    .review p {
+      font-size: 16px;
     }
   </style>
 </head>
 <body>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="reviews.html">Customer Reviews</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
-  <h1>What Our Customers Say</h1>
+  <h1 style="text-align:center;">Customer Reviews</h1>
 
   <div class="review">
-    <div class="stars">⭐⭐⭐⭐⭐</div>
-    <div class="name">Ravi P.</div>
-    <p>Excellent service and a wide range of frames. Got my eye test done and new glasses within an hour!</p>
+    <h3>Ravi Patel</h3>
+    <p>"Excellent service and huge variety of frames! Highly recommended."</p>
   </div>
 
   <div class="review">
-    <div class="stars">⭐⭐⭐⭐</div>
-    <div class="name">Hetal S.</div>
-    <p>Very professional staff and reasonable pricing. Loved the collection of sunglasses too!</p>
+    <h3>Kavita Shah</h3>
+    <p>"Very friendly staff and accurate eye testing. Got my glasses the same day!"</p>
   </div>
 
-  <!-- Add more reviews -->
-
-  <h2>Leave Us a Review!</h2>
-  <div class="form-container">
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="text" name="rating" placeholder="Your Rating (e.g., 5 stars)" required>
-      <textarea name="message" rows="4" placeholder="Your Review" required></textarea>
-      <button type="submit">Submit Review</button>
-    </form>
+  <div class="review">
+    <h3>Amit Mehra</h3>
+    <p>"Affordable pricing and branded sunglasses available. Love it!"</p>
   </div>
 
 </body>
