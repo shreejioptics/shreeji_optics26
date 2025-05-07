@@ -3,39 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <title>Our Services - Shreeji Optics</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #1d3557;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 600;
+        }
+        main {
+            padding: 30px 20px;
+        }
+        .service-card {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            display: flex;
+            align-items: center;
+        }
+        .service-card img {
+            width: 60px;
+            margin-right: 20px;
+        }
+        .service-card h3 {
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1d3557;
+            color: #fff;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Our Services</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
 
-    <main>
-        <section>
-            <h2>Eye Testing</h2>
-            <p>Computerized, accurate eye testing for clear vision and optimal lens recommendations.</p>
-        </section>
-        <section>
-            <h2>Prescription Spectacles</h2>
-            <p>Single Vision, Bifocal, and Progressive lenses with high-quality frames.</p>
-        </section>
-        <section>
-            <h2>Contact Lenses</h2>
-            <p>Wide range of soft and color contact lenses for daily and extended wear.</p>
-        </section>
-        <section>
-            <h2>UV & Blue Cut Lenses</h2>
-            <p>Protect your eyes from harmful rays and digital screen glare with advanced lens coatings.</p>
-        </section>
-    </main>
+<header>
+    <h1>Our Services</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
 
-    <footer>
-        <p>&copy; 2025 Shreeji Optics. All rights reserved.</p>
-    </footer>
+<main>
+    <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Eye Testing">
+        <div>
+            <h3>Eye Testing</h3>
+            <p>Computerized, accurate eye testing for clear vision and optimal lens recommendations using advanced technology.</p>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1019/1019607.png" alt="Prescription Spectacles">
+        <div>
+            <h3>Prescription Spectacles</h3>
+            <p>Single Vision, Bifocal, and Progressive lenses available with top-quality designer and budget-friendly frames.</p>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/706/706164.png" alt="Contact Lenses">
+        <div>
+            <h3>Contact Lenses</h3>
+            <p>Soft and color contact lenses for both daily and extended wear, designed for comfort and style.</p>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/5455/5455954.png" alt="UV & Blue Cut Lenses">
+        <div>
+            <h3>UV & Blue Cut Lenses</h3>
+            <p>Protect your eyes from harmful UV rays and digital screen glare with our advanced UV and Blue Cut lens coatings.</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Shreeji Optics. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
