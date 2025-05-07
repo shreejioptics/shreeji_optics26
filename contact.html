@@ -1,77 +1,122 @@
-</html>
-<section id="contact">
-    <h2>Our Store Locations</h2>
-
-    <div class="branch">
-        <h3>Branch 1</h3>
-        <p><strong>Address:</strong> Gf-Shop-8, Tirth-Bhoomi Residency, Haridarshan-Rashpan Road, Near D-Mart, Nikol, Ahmedabad, Gujarat 382350</p>
-        <p><strong>Phone:</strong> 99094 26003</p>
-        <p><strong>Store Hours:</strong> Monday to Sunday, 9:00 AM – 9:00 PM</p>
-        <p><strong>Website:</strong> <a href="https://shreejioptics.online">shreejioptics.online</a></p>
-    </div>
-
-    <div class="branch">
-        <h3>Branch 2</h3>
-        <p><strong>Address:</strong> Shop No. 12 A, Blueberry Complex, Near Bhojaldham Flat, Nikol, Ahmedabad, Gujarat 382350</p>
-        <p><strong>Phone:</strong> 87800 97989</p>
-        <p><strong>Store Hours:</strong> Daily, 10:00 AM – 8:30 PM</p>
-        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/shreeji__optics">@shreeji__optics</a></p>
-    </div>
-</section>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Contact Us | Shreeji Optics</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    form {
-      max-width: 400px;
-      margin: 20px auto;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    button {
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #0056b3;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Contact Us - Shreeji Optics</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #1d3557;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+        main {
+            padding: 30px 20px;
+        }
+        h2 {
+            color: #1d3557;
+        }
+        .contact-info {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+        .branch {
+            margin-bottom: 20px;
+        }
+        .branch h3 {
+            margin-bottom: 5px;
+            color: #1d3557;
+        }
+        .form-section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        button {
+            background: #1d3557;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #457b9d;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1d3557;
+            color: #fff;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
-  <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="reviews.html">Customer Reviews</a>
-    <a href="contact.html">Contact</a>
-  </div>
 
-  <h1>Contact Shreeji Optics</h1>
-  <form action="https://formspree.io/f/your_form_id" method="POST">
-    <label>Name</label>
-    <input type="text" name="name" required>
+<header>
+    <h1>Contact Us</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
 
-    <label>Email</label>
-    <input type="email" name="email" required>
+<main>
+    <div class="contact-info">
+        <h2>Our Branches</h2>
 
-    <label>Message</label>
-    <textarea name="message" rows="5" required></textarea>
+        <div class="branch">
+            <h3>Branch 1 - Nikol</h3>
+            <p>Shop No. 1, Sunrise Avenue, Nikol, Ahmedabad, Gujarat, India.</p>
+            <p>📞 +91 98765 43210</p>
+        </div>
 
-    <button type="submit">Send Message</button>
-  </form>
+        <div class="branch">
+            <h3>Branch 2 - Nikol</h3>
+            <p>Shop No. 12, Galaxy Mall, Nikol, Ahmedabad, Gujarat, India.</p>
+            <p>📞 +91 98765 12345</p>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h2>Send Us a Message</h2>
+        <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Shreeji Optics. All rights reserved.</p>
+</footer>
+
 </body>
+</html>
